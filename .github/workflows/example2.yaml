@@ -1,0 +1,11 @@
+name: print_env
+on: 
+    push:
+        branches:
+            - main
+jobs:
+    print_env:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print_env
+              run: printenv        
